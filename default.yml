@@ -100,6 +100,14 @@ policies:
   conditional_access_enabled: false
   critical: false
   description:
+  name: Antivirusgit
+  platform: darwin,windows,linux,chrome
+  query: SELECT 1 FROM osquery_info WHERE start_time > 1;
+  resolution:
+- calendar_events_enabled: false
+  conditional_access_enabled: false
+  critical: false
+  description:
   name: Antivirus
   platform: darwin,windows,linux,chrome
   query: SELECT 1 FROM osquery_info WHERE start_time > 1;
