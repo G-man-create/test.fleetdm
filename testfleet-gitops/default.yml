@@ -57,7 +57,7 @@ org_settings:
     org_logo_url_light_background:
     org_name: Fleet
   secrets:
-  - secret: # TODO: Add your enroll secrets here
+  - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
   server_settings:
     ai_features_disabled: true
     deferred_save_host: false
