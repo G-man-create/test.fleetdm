@@ -96,7 +96,7 @@ org_settings:
       host_batch_size: 0
   yara_rules:
 policies:
-- file: lib/windows/policies/windows-device-health.policies.yml
+- path: lib/windows/policies/windows-device-health.policies.yml
 - calendar_events_enabled: false
   conditional_access_enabled: false
   critical: false
