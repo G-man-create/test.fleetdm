@@ -3,4 +3,8 @@
   description: "This policy checks if BitLocker (disk encryption) is enabled on the C: volume."
   resolution: As an IT admin, turn on disk encryption in Fleet.
   query: SELECT * FROM bitlocker_info WHERE drive_letter='C:' AND protection_status = 1;
+- name: Check updates Win
   platform: windows
+  resolution:
+  description:
+  query: SELECT 1 WHERE NOT EXISTS (SELECT 1 FROM windows_updates);
