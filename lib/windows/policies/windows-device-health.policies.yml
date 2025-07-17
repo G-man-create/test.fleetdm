@@ -8,3 +8,8 @@
   resolution:
   description:
   query: SELECT 1 WHERE NOT EXISTS (SELECT 1 FROM windows_updates);
+- name: Chelsea
+  platform: windows
+  resolution:
+  description:
+  query: SELECT 1 WHERE NOT EXISTS (SELECT 1 FROM windows_updates);
